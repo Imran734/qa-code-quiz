@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "36baad20-b565-4ad4-9e74-bf64f3eb2863",
+		"name": "MeldCX Quiz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LoginPage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"username\": \"Moinuddin\",\r\n        \"name\": \"MoinTest\",\r\n        \"password\": \"Moin1234!\",\r\n        \"favouriteFruit\": \"Moin fruit\",\r\n        \"favouriteMovie\": \"Moin Room\",\r\n        \"favouriteNumber\": \"Moin<1234>\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "javascript"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/user?username=SomeUser_name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "SomeUser_name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"MoinNew\"\r\n    \"password\": \"test1\",\r\n    \"favouriteFruit\": \"Mango\",\r\n    \"favouriteMovie\": \"V for Vendetta\",\r\n    \"favouriteNumber\": \"The last prime number\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9999/user?username=SomeUser_name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "SomeUser_name"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

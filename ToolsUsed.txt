@@ -1,0 +1,1 @@
+I have user POSTMAN for API testing and Cypress.js for UI testing. I'm practicing with POSTMAN everyday for this reason I've used this tools. It's easy to understand and use. Also cypress is user friendly and efficiant tools for UI testing.
